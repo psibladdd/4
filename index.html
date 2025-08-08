@@ -96,15 +96,11 @@
             };
             
             const initialBuildings = [
-    { x: 90, z: 110, width: 11, height: 28, depth: 11, color: "#A9A9A9", type: 'normal' },
-    { x: 210, z: -30, width: 16, height: 42, depth: 16, color: "#7B68EE", type: 'normal' },
-    { x: -90, z: -60, width: 13, height: 36, depth: 13, color: "#87CEFA", type: 'normal' },
-    { x: -120, z: -130, width: 21, height: 52, depth: 15, color: "#8A2BE2", type: 'normal' },
-    { x: 120, z: -40, width: 11, height: 22, depth: 11, color: "#FF0000", type: 'normal' },
-    { x: 50, z: -15, width: 17, height: 32, depth: 17, color: "#FF69B4", type: 'normal' },
-    { x: -55, z: 10, width: 13, height: 45, depth: 19, color: "#FFA07A", type: 'normal' },
-    { x: -120, z: 35, width: 17, height: 28, depth: 17, color: "#FF8C69", type: 'normal' },
-    { x: 0, z: 0, width: 26, height: 65, depth: 26, color: "#006400", type: 'normal' }
+    { x: -120, z: 150, width: 25, height: 58, depth: 21, color: "#"+(Math.random()*0xFFFFFF<<0).toString(16).padStart(6,'0'), type: 'normal' },
+    { x: 70, z: -90, width: 17, height: 45, depth: 14, color: "#"+(Math.random()*0xFFFFFF<<0).toString(16).padStart(6,'0'), type: 'normal' },
+    { x: -30, z: 130, width: 31, height: 81, depth: 27, color: "#"+(Math.random()*0xFFFFFF<<0).toString(16).padStart(6,'0'), type: 'normal' },
+    { x: 180, z: 40, width: 13, height: 29, depth: 10, color: "#"+(Math.random()*0xFFFFFF<<0).toString(16).padStart(6,'0'), type: 'normal' },
+    { x: -200, z: -60, width: 23, height: 52, depth: 19, color: "#"+(Math.random()*0xFFFFFF<<0).toString(16).padStart(6,'0'), type: 'normal' }
 ];
             initialBuildings.forEach(b => {
                 const building = createBuilding(b.width, b.height, b.depth, b.x, b.z, b.color, b.type);
@@ -120,4 +116,5 @@
             updateStats();
         </script>
     </body>
+
     </html>
